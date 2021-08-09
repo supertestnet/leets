@@ -2,7 +2,7 @@
 
 Lightning escrowed electronic tokens. A system for issuing and transferring tokens using the lightning network and escrows.
 
-Suppose an escrow maintains a publicly viewable database of signed transactions. The signed transactions involve pubkeys, token ids, and amounts. Users can issue tokens by signing and sending an issuance transaction to the escrow for publication in its database. An issuance transaction must list a pubkey and a statement in this form: "pubkey 1ef...50a received 100 tokens from an issuance transaction, the token id is 5d2...9a4." The recipient pubkey must sign issuance transactions.
+Suppose an escrow maintains a publicly viewable database of signed transactions. The signed transactions involve pubkeys, token ids, and amounts. Users can issue tokens by signing and sending an issuance transaction to the escrow for publication in its database. An issuance transaction must list a pubkey and a statement in this form: "pubkey 1ef...50a received 100 tokens from an issuance transaction, the token id is 5d2...9a4." The recipient pubkey must sign issuance transactions and the token id must be globally unique for each asset.
 
 Users can transfer tokens by signing and sending a transfer transaction to the escrow for publication in its database. A transfer transaction must list the sender's pubkey and a statement in this form: "pubkey 4a1...990 received 50 tokens from pubkey 1ef...50a, the token id is 5d2...9a4." The sender's pubkey must sign transfer transactions. Clients only see them as valid if the sender sent tokens they previously received either via issuance transactions or through other transfers.
 
