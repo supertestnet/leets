@@ -1,6 +1,6 @@
 # Leets
 
-Lightning escrowed electronic tokens. A system for issuing and transferring assets using the lightning network and escrows.
+Lightning escrowed electronic tokens. A system for issuing and transferring tokens using the lightning network and escrows.
 
 Suppose an escrow maintains a publicly viewable database of signed transactions. The signed transactions involve pubkeys, token ids, and quantities. Users can issue tokens by signing and sending an issuance transaction to the escrow for publication in its database. An issuance transaction must list a pubkey and a statement in this form: "pubkey 1ef...50a received 100 tokens from an issuance transaction, the token id is 5d2...9a4." The recipient pubkey must sign issuance transactions.
 
