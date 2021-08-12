@@ -1,3 +1,7 @@
+# After reflection, this idea morphed into sigchains
+
+See here for more updated info: https://github.com/supertestnet/sigchains
+
 # Leets
 
 Lightning escrowed electronic tokens. A system for issuing and transferring tokens using the lightning network and escrows.
